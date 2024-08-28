@@ -20,12 +20,12 @@ class Store
     end 
 
 end 
-
-pp stores(:name)
-pp stores
-
-
 stores = Store.new('gum', 'red', 3)
+
+pp stores.name
+pp stores.color
+pp stores.price
+
 pp stores.change_name('pizza')
 stores.change_color('blue')
 pp stores

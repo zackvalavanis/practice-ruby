@@ -27,30 +27,42 @@ employee1.print_info
 employee2.print_info
 
 class Manager < Employee
+  attr_reader :employees
   def initialize(input_options)
     super
     @employees = input_options[:employees]
   end
+
   def give_all_raises
     p 'i am going to give raise'
     i = 0 
-    while i < @employees.length
-      @employees[i].give_annual_raise
+    while i < employees.length
+      employees[i].give_annual_raise
       i += 1
     end
   end
+
+  def fire_all_employees
+    employees.each do |employee|
+      employee.active = false
+    end
+  end
+
   def send_report
     puts "Sending email..."
     # use email sending library...
     puts "Email sent!"
   end
+
 end
 
 manager = Manager.new(first_name: "Saron", last_name: "Yitbarek", salary: 100000, active: true, employees: [employee1, employee2])
 manager.print_info
 manager.send_report
 manager.give_all_raises
-
+manager.fire_all_employees
+pp employee1
+pp employee2
 
 
 # Decomposition Practice: 

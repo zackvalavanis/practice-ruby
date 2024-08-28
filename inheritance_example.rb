@@ -32,5 +32,7 @@ end
 bikes = Bike.new
 cars = Car.new
 
-pp cars.honk_horn
-pp bikes.ring_bell
+puts cars.accelerate
+puts cars.honk_horn
+puts bikes.accelerate
+puts bikes.ring_bell

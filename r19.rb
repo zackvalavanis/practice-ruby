@@ -32,3 +32,13 @@ array4.length.times do |element|
   array3 << array4[element] * 3
 end
 pp array3
+
+# Map method 
+
+# Alternative solution with the array .map method
+array5 = [1, 2, 3, 4, 5]
+new_array4 = []
+
+new_array4 = array5.map {|arraysss| arraysss * 3 }
+
+p new_array4

@@ -23,4 +23,11 @@ array1.forEach( function (number) {
 })
 console.log(new_array1);
 
+// map method 
+var array5 = [1, 2, 3, 4, 5];
+var new_array5 = [];
 
+new_array5 = array5.map(function(ar) { 
+  return ar * 3;
+})
+console.log(new_array5)

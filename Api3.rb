@@ -1,14 +1,7 @@
 require 'http'
 response = HTTP.get("https://data.cityofchicago.org/resource/xzkq-xp2w.json")
 data = response.parse
-=begin
-data.each do |element|
-  job_title = element["job_titles"].to_s 
-  annual_salary = element["annual_salary"]
-  pp "job_title: #{job_title}"
-  pp "Annual_salary: #{annual_salary}"
-end
-=end
+
 new_hash = {}
 
 data.each do |element|

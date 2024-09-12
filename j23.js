@@ -18,3 +18,21 @@ console.log(new_array)
 
 // Each method 
 
+var arrays = [2, 32, 80, 18, 12, 3]
+var new_array = []
+
+arrays.forEach(function (number) { 
+  if (number < 20) { 
+    new_array.push(number);
+  }
+});
+
+console.log(new_array)
+
+//filter 
+
+var arrays = [2, 32, 80, 18, 12, 3]
+var new_array = arrays.filter( function(number) { 
+  return number < 20
+});
+console.log(new_array)

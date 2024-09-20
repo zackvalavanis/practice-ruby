@@ -7,3 +7,11 @@ new_array = strings.map( (word) => word.toUpperCase());
 
 console.log(new_array);
 
+
+//foreach 
+
+new_array1 = [];
+strings.forEach( (word) => { 
+  new_array1.push(word.toUpperCase());
+});
+console.log(new_array1)
